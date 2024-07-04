@@ -30,14 +30,14 @@
 
 2. Obtenez une session du bot : <br>
   
-[Session-1](https://zokouscan-xbym.onrender.com) ; <br>
+[Session-1](https://zkscan.onrender.com/) ; <br>
 
  
 
 ## Déploiement
 - **déploiement sur heroku**
   1. si vous ne disposez pas de compte **heroku** cliquez [**ici**](https://id.heroku.com/login) pour vous en procurer un .
-  2.  cliquez [**ici**](https://dashboard.heroku.com/new?template=https://github.com/djalega8000/Zokou-2.0) pour deployer le bot sur **heroku**
+  2.  cliquez [**ici**](https://dashboard.heroku.com/new?template=https://github.com/FaouzKK/zokou-french-version-whatsapp-bot) pour deployer le bot sur **heroku**
 
 - **Déploiement sur Koyeb**
   1. si vous n'avez pas de compte **koyeb** cliquez [**ici**](https://dashboard.koyeb.com/signup) pour vous en procurer un .
