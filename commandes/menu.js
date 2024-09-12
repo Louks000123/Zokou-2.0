@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu", reaction:"📁",categorie: "Général" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "menu", reaction:"🍥",categorie: "Général" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -45,7 +45,7 @@ const date = moment().format('DD/MM/YYYY');
 ╰─────✧WA-BOT✧─────◆ \n\n`;
     
 let menuMsg = `
-👋 salut ${nomAuteurMessage} 👋
+👋 salut moi c'est *~Loukson~* et toi c'est ${nomAuteurMessage} 👋
 
 *Voici la liste de mes commandes :*
 ◇                             ◇
