@@ -11,7 +11,7 @@ const { recupevents } = require('../bdd/welcome');
 const {exec}=require("child_process") ;
 
 
-zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "appel", categorie: "Groupe", reaction: "🍥" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions
 
