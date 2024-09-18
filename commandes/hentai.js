@@ -7,9 +7,9 @@ let hdb = require('../bdd/hentai') ;
 
 
 zokou({
-  nomCom: "hwaifu",
+  nomCom: "louksonwaifu",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🌀"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms ,verifGroupe , superUser} = commandeOptions;
@@ -35,9 +35,9 @@ async (origineMessage, zk, commandeOptions) => {
 
   /////////////// hneko //////////
 zokou({
-  nomCom: "trap",
+  nomCom: "louksontrap",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🍃"
 },
 async (origineMessage, zk, commandeOptions) => {
   
@@ -63,9 +63,9 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 zokou({
-  nomCom: "hneko",
+  nomCom: "louksonneko",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🍜"
 },
 async (origineMessage, zk, commandeOptions) => {
   
@@ -93,7 +93,7 @@ async (origineMessage, zk, commandeOptions) => {
 zokou({
   nomCom: "blowjob",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🤘🏻"
 },
 async (origineMessage, zk, commandeOptions) => {
   
@@ -120,9 +120,9 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
-  nomCom: "hentaivid",
+  nomCom: "loukhentaivid",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🤘🏻"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms ,verifGroupe , superUser} = commandeOptions;
