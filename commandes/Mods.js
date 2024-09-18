@@ -26,7 +26,7 @@ zokou({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
  // if (apikey === null || apikey === 'null') { repondre('Veillez vérifier votre apikey ou si vous en avez pas , veiller crée un compte sur api.lolhuman.xyz et vous en procurer une.'); return; };
 
   if (!arg[0]) {
-    repondre("Veillez inserer un lien de stickers telegrame svp");
+    repondre("🍃🍥Veillez inserer un lien de stickers telegrame svp");
     return;
   }
 
@@ -72,7 +72,7 @@ zokou({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) =>
 
         const sticker = new Sticker(buffer.data, {
           pack: nomAuteurMessage,
-          author: "Zokou-md",
+          author: "𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗",
           type: StickerTypes.FULL,
           categories: ['🤩', '🎉'],
           id: '12345',
@@ -291,14 +291,14 @@ zokou({ nomCom: "deblock", categorie: "Mods" }, async (dest, zk, commandeOptions
   
     });
 
-zokou({ nomCom: "purge", categorie: "Groupe", reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "purge", categorie: "Groupe", reaction: "🍥" }, async (dest, zk, commandeOptions) => {
 
   const { auteurMessage ,ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser,prefixe } = commandeOptions
 
   const metadata = await zk.groupMetadata(dest) ;
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿cette commande est réservée aux groupes ❌"); return; }
+  if (!verifGroupe) { repondre("🍥🍃cette commande est réservée aux groupes 🍥🍃"); return; }
   if (superUser || auteurMessage == metadata.owner) { 
   
    repondre('Les membres non admins seront retiré du groupe vous avez 5 secondes pour revandiquer votre choix en redemarrant le bot') ;
@@ -334,7 +334,7 @@ zokou({
     const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser } = commandeOptions;
 
     
-  if (!superUser) {repondre('Cette commande n\'est permis qu\'au proprietaire du bot') ; return}
+  if (!superUser) {repondre('Cette commande n\'est permis qu\'au proprietaire du bot 🍥🍃') ; return}
     if (!arg[0]) {
         // Fonction 'repondre' doit être définie pour envoyer une réponse.
         repondre(`mentionner la victime een tappant ${prefixe}ban add/del pour bannir/debannir la victime`);
