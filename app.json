@@ -10,8 +10,8 @@
     "PREFIXE":
     {
       "description":"choisissez votre préfixe",
-      "value":"",
-      "required":false
+      "value":"-",
+      "required":true
     },
     "LECTURE_AUTO_STATUS":
     {
