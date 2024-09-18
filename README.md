@@ -37,7 +37,7 @@
 ## Déploiement
 - **déploiement sur heroku**
   1. si vous ne disposez pas de compte **heroku** cliquez [**ici**](https://id.heroku.com/login) pour vous en procurer un .
-  2.  cliquez [**ici**](https://dashboard.heroku.com/new?template=https://github.com/FaouzKK/zokou-french-version-whatsapp-bot) pour deployer le bot sur **heroku**
+  2.  cliquez [**ici**](https://dashboard.heroku.com/new?template=https://github.com/Loukson/Zokou-2.0) pour deployer le bot sur **heroku**
 
 - **Déploiement sur Koyeb**
   1. si vous n'avez pas de compte **koyeb** cliquez [**ici**](https://dashboard.koyeb.com/signup) pour vous en procurer un .
@@ -64,5 +64,5 @@ Profitez des fonctionnalités variées du Bot WhatsApp Zokou pour améliorer vos
 ## Developpeur :
  
   [**Djalega++**](https://github.com/djalega8000/Zokou-MD/)  <br>
-  [**᚛M๏𝓷keℽ D Lบffy᚜**](https://github.com/Faouz995)
- 
+  [**᚛M๏𝓷keℽ D Lบffy᚜**](https://github.com/Faouz995) <br>
+ .[**✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳**](https://github.com/Loukson)
