@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "test", reaction: "🍥", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = 'Salut je m\'appelle *🅽︎🅰︎🆁︎🆄︎🆃︎🅾︎-🅼︎🅳︎* \n\n ' + 'je suis un bot Whatsapp Multi-appareil ';
+    let z = 'Salut je m\'appelle *𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗* \n\n ' + 'je suis un bot Whatsapp Multi-appareil🤘🏻🍥🌀 ';
     let d = ' developpé par *✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳*';
     let varmess = z + d;
     var img = 'https://telegra.ph/file/085c4b1068f0f4f8db970.mp4';
@@ -19,7 +19,7 @@ console.log("mon test");
 
 async function  execute  (origineMessage,zok) {
   console.log("Commande saisie !!!s")
-   let z ='Salut je m\'appelle *🅽︎🅰︎🆁︎🆄︎🆃︎🅾︎-🅼︎🅳︎* \n\n '+'je suis un bot Whatsapp Multi-appareil '
+   let z ='Salut je m\'appelle *𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗* \n\n '+'je suis un bot Whatsapp Multi-appareil🤘🏻🍥🌀 '
       let d =' developpé par *✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳*'
       let varmess=z+d
       var img='https://telegra.ph/file/085c4b1068f0f4f8db970.mp4'
