@@ -6,7 +6,7 @@ const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 zokou({
   nomCom: "ranime",
   categorie: "Fun",
-  reaction: "📺"
+  reaction: "🌀"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -71,7 +71,7 @@ zokou({
   const { arg, repondre , ms } = commandeOptions;
 
   if (!arg[0] || arg === "") {
-    repondre("donnez le nom d'une  série ou un film.");
+    repondre("donnez le nom d'une  série ou un film.🍥🌀🍃");
     return;
   }
 
@@ -122,7 +122,7 @@ zokou({
   const { arg, repondre,ms , nomAuteurMessage } = commandeOptions;
 
   if (!arg[0] || arg.length !== 1) {
-    repondre("Utilisation incorrecte. Exemple : .emojimix 😀;🥰");
+    repondre("Utilisation incorrecte. Exemple : .emojimix 🍥;🍃");
     return;
   }
 
@@ -130,7 +130,7 @@ zokou({
   const emojis = arg.join(' ').split(';');
 
   if (emojis.length !== 2) {
-    repondre("Veuillez spécifier deux emojis en utilisant un point-virgule comme séparateur.");
+    repondre("Mec veuillez spécifier deux emojis en utilisant un point-virgule comme séparateur.🍥🌀");
     return;
   }
 
