@@ -31,7 +31,7 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧${s.BOT}✧────◆
+╭───${s.BOT}───◆
 │   *Préfixe* : ${s.PREFIXE}
 │   *Owner* : ${s.NOM_OWNER}
 │   *Mode* : ${mode}
@@ -41,17 +41,17 @@ const date = moment().format('DD/MM/YYYY');
 │   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 │   *Plateforme* : ${os.platform()}
 │   *Développeurs* : ✮ʟᴏᴜᴋsᴏɴ ʟᴇ ᴄʟᴀᴠɪᴇʀ ᴅ'ᴏʀ🍥
-│🍥🍥🍥🍥🍥🍥🍥🍥🍥🍥
-│🌀🌀🌀🌀🌀🌀🌀🌀🌀🌀
-│🍥🍜🤘🏻🍃𝗟𝗢𝗨𝗞𝗦𝗢𝗡🍃🌀⚡
-│🍜🍃𝗨𝗭𝗨𝗠𝗔𝗞𝗜🍥🌀🍃🤘🏻🍜
-│🍥✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥
-│🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻
-│🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜
+│🍥🍥🍥🍥🍥🍥🍥🍥🍥
+│🌀🌀🌀🌀🌀🌀🌀🌀🌀
+│🍥🍜🤘🏻𝗟𝗢𝗨𝗞𝗦𝗢𝗡🌀🍃
+│🍜🍃𝗨𝗭𝗨𝗠𝗔𝗞𝗜🍥🤘🏻🍜
+│🍥✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥
+│🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻
+│🍜🍜🍜🍜🍜🍜🍜🍜🍜
 ╰───🅽︎🅰︎🆁︎🆄︎🆃︎🅾-🅼︎🅳──◆ \n\n`;
     
 let menuMsg = `
-👋 salut moi c'est *_✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥_* et toi c'est ${nomAuteurMessage} 👋
+🤘🏻 salut moi c'est *_✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥_* et toi c'est ${nomAuteurMessage} 🤘🏻
 
 *Voici la liste de mes commandes :*
 ◇                             ◇
