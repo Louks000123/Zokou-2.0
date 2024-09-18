@@ -18,7 +18,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
 
  
 
-  if (!verifGroupe) { repondre("✋🏿 ✋🏿cette commande est réservée aux groupes ❌"); return; }
+  if (!verifGroupe) { repondre("Bro dsl mais cette commande est réservée aux groupes 🤘🏻🌀"); return; }
   if (!arg || arg === ' ') {
   mess = 'Aucun Message'
   } else {
@@ -27,7 +27,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *Zokou-Md* 🌟
+        🌀 *𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗* 🌀
 ========================\n
 👥 Groupe : ${nomGroupe} 🚀 
 👤 Auteur : *${nomAuteurMessage}* 👋 
@@ -40,7 +40,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
 
 
 
-  let emoji = ['🦴', '👀', '😮‍💨', '❌', '✔️', '😇', '⚙️', '🔧', '🎊', '😡', '🙏🏿', '⛔️', '$','😟','🥵','🐅']
+  let emoji = ['🍥' , '🦴', '🌀' , '👀', '🤘🏻' , '😮‍💨', '❌', '⚡' , '✔️', '😇', '🍃', '⚙️', '🔧', '🍜', '🤣','🎊', '🍥', '😡', '🤜🏻', '🤛🏻', '💌', '🙏🏿', '⛔️', '😋', '$','😟','🥵','🐅']
   let random = Math.floor(Math.random() * (emoji.length - 1))
 
 
@@ -58,7 +58,7 @@ zokou({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, z
 });
 
 
-zokou({ nomCom: "lien", categorie: "Groupe", reaction: "🙋" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "lien", categorie: "Groupe", reaction: "🍥" }, async (dest, zk, commandeOptions) => {
   const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("wait bro , tu veux le lien de mon dm?"); return; };
 
@@ -74,7 +74,7 @@ Lien :${lien}`
 
 });
 /** *nommer un membre comme admin */
-zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "🍃" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
@@ -131,7 +131,7 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
         }
         else { return repondre("Désolé je ne peut pas effectuer cette action car je ne suis pas administrateur du groupe .") }
 
-      } else { repondre("veuiller taguer le membre à nommer"); }
+      } else { repondre("Bro veuiller taguer le membre à nommer🍃🍜"); }
     } else { return repondre("Désolé je ne peut pas effectuer cette action car vous n'êtes pas administrateur du groupe .") }
   } catch (e) { repondre("oups " + e) }
 
@@ -140,10 +140,10 @@ zokou({ nomCom: "nommer", categorie: "Groupe", reaction: "👨🏿‍💼" }, as
 //fin nommer
 /** ***demettre */
 
-zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "🍃" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
-  if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
+  if (!verifGroupe) { return repondre("bro Pour les groupe uniquement🍃"); }
 
   const met = await zk.groupMetadata(dest) ;
 
@@ -188,7 +188,7 @@ zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, 
           if (membre) {
             if (admin == false) {
 
-              repondre("Ce membre n'est pas un  administrateur du groupe.")
+              repondre("dsl man mais cette commande est permis qu'au administrateur du groupe 🍃🍜.")
 
             } else {
               var txt = `@${auteurMsgRepondu.split("@")[0]} a été  démis de ses fonctions d'administrateur du groupe..\n`
@@ -210,10 +210,10 @@ zokou({ nomCom: "demettre", categorie: "Groupe", reaction: "👨🏿‍💼" }, 
 
 /** ***fin démettre****  **/
 /** **retirer** */
-zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "🍃" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
-  if (!verifGroupe) { return repondre("Pour les groupe uniquement"); }
+  if (!verifGroupe) { return repondre("Pour les groupe uniquement🍃🍥🍥"); }
 
 
   const verifMember = (user) => {
@@ -277,7 +277,7 @@ zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, a
         else { return repondre("Désolé je ne peut pas effectuer cette action car je ne suis pas administrateur du groupe .") }
 
       } else { repondre("veuiller taguer le membre à rétirer"); }
-    } else { return repondre("Désolé je ne peut pas effectuer cette action car vous n'êtes pas administrateur du groupe .") }
+    } else { return repondre("Désolé je ne peut pas effectuer cette action car vous n'êtes pas administrateur du groupe🍥🍃🍜 .") }
   } catch (e) { repondre("oups " + e) }
 
 })
@@ -286,7 +286,7 @@ zokou({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, a
 /** *****fin retirer */
 
 
-zokou({ nomCom: "supp", categorie: "Groupe",reaction:"🧹" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "supp", categorie: "Groupe",reaction:"😋" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe,auteurMsgRepondu,idBot, msgRepondu, verifAdmin, superUser} = commandeOptions;
   
@@ -342,7 +342,7 @@ zokou({ nomCom: "supp", categorie: "Groupe",reaction:"🧹" }, async (dest, zk, 
          
          await zk.sendMessage(dest,{delete:key});return;
 
-             }catch(e){repondre("J'ai besoins des droit d'administration")}
+             }catch(e){repondre("J'ai besoins des droit d'administration 🍜🍥")}
                     
                       
                }else{repondre("Désolé vous n'etes pas administrateur du groupe.")}
@@ -373,7 +373,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
 
  //------------------------------------antilien-------------------------------
 
- zokou({ nomCom: "antilien", categorie: "Groupe", reaction: "🔗" }, async (dest, zk, commandeOptions) => {
+ zokou({ nomCom: "antilien", categorie: "Groupe", reaction: "🌀" }, async (dest, zk, commandeOptions) => {
 
 
   var { repondre, arg, verifGroupe, superUser, verifAdmin } = commandeOptions;
@@ -387,7 +387,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
   if( superUser || verifAdmin) {
     const enetatoui = await verifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre("*antilien oui* pour activer l'antilien\n*antilien non* pour desactiver l'antilien\n*antilien action/retier* pour retirer retirer directement sans preavis\n*antilien action/warn* pour donner des avertissement\n*antilien action/supp* pour supprimer uniquement le lien sans toutes fois sanctionner\n\nNotez que par defaut l'antilien est reglé sur supp") ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre("*antilien oui* pour activer l'antilien\n*antilien non* pour desactiver l'antilien\n*antilien action/retier* pour retirer retirer directement sans preavis\n*antilien action/warn* pour donner des avertissement\n*antilien action/supp* pour supprimer uniquement le lien sans toutes fois sanctionner\n\nNotez que par defaut l'antilien est reglé sur supp🍃🍥") ; return};
      
       if(arg[0] === 'oui') {
 
@@ -396,7 +396,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
                     } else {
                   await ajouterOuMettreAJourJid(dest,"oui");
                 
-              repondre("l'antilien est activer avec succes") }
+              repondre("cool bro l'antilien est activer avec succes🍥🍃") }
      
             } else if (arg[0] === "non") {
 
@@ -443,7 +443,7 @@ zokou({ nomCom: "info", categorie: "Groupe" }, async (dest, zk, commandeOptions)
 
  //------------------------------------antibot-------------------------------
 
- zokou({ nomCom: "antibot", categorie: "Groupe", reaction: "🔗" }, async (dest, zk, commandeOptions) => {
+ zokou({ nomCom: "antibot", categorie: "Groupe", reaction: "🌀" }, async (dest, zk, commandeOptions) => {
 
 
   var { repondre, arg, verifGroupe, superUser, verifAdmin } = commandeOptions;
@@ -610,13 +610,13 @@ zokou({ nomCom: "gpp", categorie: "Groupe" }, async (dest, zk, commandeOptions) 
 });
 
 /////////////
-/* zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,commandeOptions)=>{
+/* zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🍃"},async(dest,zk,commandeOptions)=>{
 
 
 const {ms,repondre,msgRepondu,verifGroupe,prefixe,arg}=commandeOptions;
 
 
-if(!verifGroupe){return repondre("Pour les groupes uniquement ⛔️");}
+if(!verifGroupe){return repondre("man Pour les groupes uniquement 🍃🍥🍥⛔️");}
 
 const infoGroupe=verifGroupe?await zk.groupMetadata(dest).catch((e)=>{console.log(e);}):"";
 
@@ -706,7 +706,7 @@ if(isImgRpd)
  */
 
 
-zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🤜🏻"},async(dest,zk,commandeOptions)=>{
 
 
   const {repondre,msgRepondu,verifGroupe,arg ,verifAdmin , superUser}=commandeOptions;
@@ -812,7 +812,7 @@ zokou({nomCom:"annonce",categorie:"Groupe",reaction:"🎤"},async(dest,zk,comman
 });
 
 
-zokou({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "apk", reaction: "⚡", categorie: "Recherche" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
@@ -897,7 +897,7 @@ zokou({
         let state ;
         if (group_cron == null || group_cron.mute_at == null) {
   
-            state = "Aucune heure regler pour l'automute "
+            state = "Aucune heure regler pour l'automute🍜🍃 "
         } else {
   
           state = `Le groupe se fermera a ${(group_cron.mute_at).split(':')[0]}H ${(group_cron.mute_at).split(':')[1]}`
@@ -942,7 +942,7 @@ Exemple automute 9:30
           }) ;
 
         } else {
-            repondre('Veuillez entrer une heure valide avec l\'heure et la minute separer par :') ;
+            repondre('🍜🍥🌀Veuillez entrer une heure valide avec l\'heure et la minute separer par :') ;
         }
 
 
@@ -957,7 +957,7 @@ Exemple automute 9:30
 
     const {arg , ms , repondre , verifAdmin , superUser } = commandeOptions ;
 
-    if (!verifAdmin) { repondre('Vous n\'etes pas administrateur du groupe') ; return}
+    if (!verifAdmin) { repondre('Vous n\'etes pas administrateur du groupe🌀🌀🍥') ; return}
 
     group_cron = await cron.getCronById(dest) ;
     
@@ -1089,7 +1089,7 @@ zokou({
       repondre('Les nsfw sont desormais desactives pour se groupe') ;
   } else {
 
-      repondre('Vous devez mettre "on" ou "off"') ;
+      repondre('Vous devez mettre "on" ou "off" 🍥🌀') ;
 
   }
 } ) ;
