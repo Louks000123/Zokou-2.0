@@ -9,7 +9,7 @@ const { exec } = require("child_process");
 
 
 
-zokou({nomCom:"sticker",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+zokou({nomCom:"sticker",categorie: "Conversion", reaction: "🍥"},async(origineMessage,zk,commandeOptions)=>{
 
 let {ms,mtype,arg,repondre,nomAuteurMessage}=commandeOptions
   var txt=JSON.stringify(ms.message)
@@ -76,7 +76,7 @@ const alea = (ext) => {
       quality: 40,
     });
   } else {
-    repondre("Veuillez mentionné une image ou une vidéo!");
+    repondre("Veuillez mentionné une image ou une vidéo🍥🌀🍃!");
     return;
   }
 
@@ -100,10 +100,10 @@ try{
   
 });
 
-zokou({nomCom:"scrop",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+zokou({nomCom:"scrop",categorie: "Conversion", reaction: "🍥"},async(origineMessage,zk,commandeOptions)=>{
    const {ms , msgRepondu,arg,repondre,nomAuteurMessage} = commandeOptions ;
 
-  if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;
+  if(!msgRepondu) { repondre( 'veiller mentionner le media🌀🍥🍥' ) ; return } ;
   if(!(arg[0])) {
        pack = nomAuteurMessage
   } else {
@@ -115,7 +115,7 @@ zokou({nomCom:"scrop",categorie: "Conversion", reaction: "👨🏿‍💻"},asyn
 mediamsg = msgRepondu.videoMessage
   } 
    else {
-    repondre('Euh un media svp'); return
+    repondre('Euh un media svp🍥🍜🌀'); return
   } ;
 
   var stick = await zk.downloadAndSaveMediaMessage(mediamsg)
@@ -134,7 +134,7 @@ mediamsg = msgRepondu.videoMessage
 
 });
 
-zokou({nomCom:"jeprend",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+zokou({nomCom:"jeprend",categorie: "Conversion", reaction: "🍥"},async(origineMessage,zk,commandeOptions)=>{
    const {ms , msgRepondu,arg,repondre,nomAuteurMessage} = commandeOptions ;
 
   if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;
@@ -151,7 +151,7 @@ mediamsg = msgRepondu.videoMessage
   else if (msgRepondu.stickerMessage) {
     mediamsg = msgRepondu.stickerMessage ;
   } else {
-    repondre('Euh un media svp'); return
+    repondre('Euh un media svp🌀🍜🍥'); return
   } ;
 
   var stick = await zk.downloadAndSaveMediaMessage(mediamsg)
@@ -172,11 +172,11 @@ mediamsg = msgRepondu.videoMessage
 
 
 
-zokou({ nomCom: "ecrire", categorie: "Conversion", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
+zokou({ nomCom: "ecrire", categorie: "Conversion", reaction: "🍥" }, async (origineMessage, zk, commandeOptions) => {
   const { ms, msgRepondu, arg, repondre, nomAuteurMessage } = commandeOptions;
 
   if (!msgRepondu) {
-    repondre('Veuillez mentionner une image');
+    repondre('Veuillez mentionner une image🍃🍜🌀');
     return;
   }
 
@@ -186,7 +186,7 @@ zokou({ nomCom: "ecrire", categorie: "Conversion", reaction: "👨🏿‍💻" }
   } ;
   text = arg.join(' ') ;
   
-  if(!text || text === null) {repondre('Veiller inserer un texte') ; return } ;
+  if(!text || text === null) {repondre('Veiller inserer un texte🍃🍥') ; return } ;
  
   
   const mediamsg = msgRepondu.imageMessage;
@@ -240,11 +240,11 @@ zokou({ nomCom: "ecrire", categorie: "Conversion", reaction: "👨🏿‍💻" }
 
   } catch (error) {
     console.error('Erreur lors de l\'envoi sur Imgur :', error);
-    repondre('Une erreur est survenue lors de la création du mème.');
+    repondre('Une erreur est survenue lors de la création du mème🍥🍃.');
   }
 });
 
-/* zokou({nomCom:"url",categorie: "Conversion", reaction: "👨🏿‍💻"},async(origineMessage,zk,commandeOptions)=>{
+/* zokou({nomCom:"url",categorie: "Conversion", reaction: "🍥"},async(origineMessage,zk,commandeOptions)=>{
    const {ms , msgRepondu,arg,repondre,nomAuteurMessage} = commandeOptions ;
 
   if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;
@@ -288,20 +288,20 @@ mediamsg = msgRepondu.videoMessage
     mediamsg = msgRepondu.stickerMessage ;
     repondre('commande non achever') ; return
   } else {
-    repondre('Euh un media svp'); return
+    repondre('Euh un media svp🤘🏻🍜'); return
   } ; 
 
 
       
                   } ); */
 
-zokou({nomCom:"photo",categorie: "Conversion", reaction: "👨🏿‍💻"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"photo",categorie: "Conversion", reaction: "🍥"},async(dest,zk,commandeOptions)=>{
    const {ms , msgRepondu,arg,repondre,nomAuteurMessage} = commandeOptions ;
 
   if(!msgRepondu) { repondre( 'veiller mentionner le media' ) ; return } ;
  
    if (!msgRepondu.stickerMessage) {
-      repondre('Euh mentionner un sticker non-animé'); return
+      repondre('Euh mentionner un sticker non-animé🍜🍥'); return
   } ;
 
  let mediaMess = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
@@ -318,7 +318,7 @@ zokou({nomCom:"photo",categorie: "Conversion", reaction: "👨🏿‍💻"},asyn
             zk.sendMessage(
               dest,
               {
-                text: 'Un sticker non animé svp',
+                text: 'Un sticker non animé svp🍥🌀🍜',
               },
               { quoted: ms }
             );
@@ -352,18 +352,18 @@ async function uploadToTelegraph(Path) {
         if (data && data[0] && data[0].src) {
             return "https://telegra.ph" + data[0].src;
         } else {
-            throw new Error("Erreur lors de la récupération du lien de la vidéo");
+            throw new Error("Erreur lors de la récupération du lien de la vidéo🌀🍥");
         }
     } catch (err) {
         throw new Error(String(err));
     }
 }
 
-zokou({ nomCom: "url", categorie: "Conversion", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
+zokou({ nomCom: "url", categorie: "Conversion", reaction: "🍥" }, async (origineMessage, zk, commandeOptions) => {
     const { msgRepondu, repondre } = commandeOptions;
 
     if (!msgRepondu) {
-        repondre('Veuillez mentionner une vidéo ou une image.');
+        repondre('Veuillez mentionner une vidéo ou une image🍥🌀🍜.');
         return;
     }
 
@@ -374,7 +374,7 @@ zokou({ nomCom: "url", categorie: "Conversion", reaction: "👨🏿‍💻" }, a
     } else if (msgRepondu.imageMessage) {
         mediaPath = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage);
     } else {
-        repondre('Veuillez mentionner une vidéo ou une image.');
+        repondre('Veuillez mentionner une vidéo ou une image.🍜🌀🍥');
         return;
     }
 
@@ -390,7 +390,7 @@ zokou({ nomCom: "url", categorie: "Conversion", reaction: "👨🏿‍💻" }, a
 });
 
 
-zokou({ nomCom: "trd", categorie: "Conversion", reaction: "👨🏿‍💻" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "trd", categorie: "Conversion", reaction: "🍥" }, async (dest, zk, commandeOptions) => {
 
   const { msgRepondu, repondre , arg } = commandeOptions;
 
@@ -400,7 +400,7 @@ zokou({ nomCom: "trd", categorie: "Conversion", reaction: "👨🏿‍💻" }, a
       
      
 
-       if(!arg || !arg[0]) { repondre('indiquer le language dans lequel vous voulez traduire (ex :  fr , en)') ; return }
+       if(!arg || !arg[0]) { repondre('🍥🌀indiquer le language dans lequel vous voulez traduire (ex :  fr , en)') ; return }
    
 
          let texttraduit = await traduire(msgRepondu.conversation , {to : arg[0]}) ;
@@ -409,13 +409,13 @@ zokou({ nomCom: "trd", categorie: "Conversion", reaction: "👨🏿‍💻" }, a
 
         } catch (error) {
           
-          repondre('Mentionner un message texte') ;
+          repondre('Mentionner un message texte🤘🏻'🌀🍜) ;
       
         }
 
    } else {
      
-     repondre('Mentionner le message texte a traduire')
+     repondre('🌀🍥🤘🏻Mentionner le message texte a traduire')
    }
 
 
