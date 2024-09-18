@@ -8,13 +8,13 @@ var gis = require('g-i-s');
 zokou({
   nomCom: "img",
   categorie: "Recherche",
-  reaction: "📷"
+  reaction: "🍃"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
 
   if (!arg[0]) {
-    repondre('Veuillez fournir un terme de recherche pour les images !');
+    repondre('mec Veuillez fournir un terme de recherche pour les images🍃🍜!');
     return;
   }
 
