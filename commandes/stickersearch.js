@@ -5,13 +5,13 @@ const {zokou} = require("../framework/zokou");
 zokou({
   nomCom: "stickersearch",
   categorie: "Recherche",
-  reaction: "🍁"
+  reaction: "🍃"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg, nomAuteurMessage } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("Veuillez fournir un terme de recherche !");
+    repondre("Mec faut mettre le nom du sticker que tu cherche🌀🍃🍥 !");
     return;
   }
 
@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
     const stickerMess = new Sticker(gifUrl, {
       pack: packname,
-      author: 'Zokou-MD',
+      author: 'ɴᴀʀᴜᴛᴏ-ᴍᴅ',
       type: StickerTypes.FULL,
       categories: ["🤩", "🎉"],
       id: "12345",
@@ -44,6 +44,6 @@ async (dest, zk, commandeOptions) => {
     zk.sendMessage(dest, { sticker: stickerBuffer2 }, { quoted: ms }); }
   } catch (error) {
     console.error("Erreur lors de la recherche de stickers :", error);
-    repondre("Erreur lors de la recherche de stickers.");
+    repondre("Erreur lors de la recherche des stickers 🍃🌀.");
   }
 });
