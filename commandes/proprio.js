@@ -19,7 +19,7 @@ const{repondre,ms,dev,superUser}=com;
 
   const {exec}=require("child_process") ;
 
-    repondre("* Tkt le Redémarrage du bot est en cour...🍃🌀🤘🏻*");
+    repondre("* Tkt man le Redémarrage du bot est en cour...🍃🌀🤘🏻*");
 
   exec("pm2 restart all");
   
