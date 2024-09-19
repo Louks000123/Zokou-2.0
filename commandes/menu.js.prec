@@ -44,7 +44,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
    ||      Date : ${date}
    ||      Heure : ${temps}
    ||      Mémoire : ${format(os.totalmem()-os.freemem())}/${format(os.totalmem())}                   {Plateforme : ${os.platform()}
-   ||  Développeurs : ✮ʟᴏᴜᴋsᴏɴ ʟᴇ ᴄʟᴀᴠɪᴇʀ ᴅ'ᴏʀ🍥
+   ||  Développeurs : ✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳
    ||
    ╚════🍥🍜 ࿇ 🍥🍜════╝`;*/
     menuMsg += `
@@ -57,7 +57,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 ║    Heure : ${temps}
 ║    Mémoire : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ║    Plateforme : ${os.platform()}
-║    Développeurs : ✮ʟᴏᴜᴋsᴏɴ ʟᴇ ᴄʟᴀᴠɪᴇʀ ᴅ'ᴏʀ🍥
+║    Développeurs : ✮✮✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳
 ╚════--------------- \n\n`;
     for (const cat in coms) {
         if (!emoji[cat]) {
@@ -83,7 +83,7 @@ zokou({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptio
 
 module.exports.commande =()=>
   {
-    var nomCom=["menu","m","fonctions"];
+    var nomCom=["Loukson","m","fonctions"];
     var reaction="🍥"
     var categorie="général"
 
