@@ -6,7 +6,7 @@ const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-zokou({ nomCom: "menu", reaction:"🍥",categorie: "Général" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "Loukson", reaction:"🍥",categorie: "Général" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
@@ -48,6 +48,7 @@ const date = moment().format('DD/MM/YYYY');
 │🍥✮ʟᴏᴜᴋsᴏɴ ᵘᶻᵘᵐᵃᵏⁱ₊ ͟͟͞͞➳🍥
 │🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻🤘🏻
 │🍜🍜🍜🍜🍜🍜🍜🍜🍜
+│*${greeting}*
 ╰───𝗡𝗔𝗥𝗨𝗧𝗢-𝗠𝗗──◆ \n\n`;
     
 let menuMsg = `
